@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "MeanVector"
+version = "0.1"
+authors = [{name = "Valeria Zaborovskaia", email="valerizab@mail.ru"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.8"
+['version']
