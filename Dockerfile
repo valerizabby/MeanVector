@@ -4,7 +4,7 @@ RUN apt update
 RUN apt-get install -y g++ python3 libopenblas-dev pip vim git tree
 RUN apt-get install -y libgtest-dev
 RUN apt-get install -y python3.10-venv
-RUN apt-get install make
+RUN apt-get install -y tree make
 
 COPY requirements.txt requirements.txt
 RUN pip install --upgrade pip
