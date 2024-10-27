@@ -20,5 +20,5 @@ PYBIND11_MODULE(vector_core, m) {
           Returns:
             float
                 The mean value of vector.
-      )doc")
+      )doc");
 }

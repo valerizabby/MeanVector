@@ -1,11 +1,10 @@
 CXX=g++
 CXXFLAGS=-std=c++11 -O3 -march=native -Wall -I$(SRC_DIR) $(shell python3 -m pybind11 --includes)
-PY_LDFLAGS=$(shell python3-config --ldflags) -lopenblas -shared -fPIC
+PY_LDFLAGS=$(shell python3-config --ldflags) -shared -fPIC -undefined dynamic_lookup
 GTEST_FLAGS=-lgtest -lgtest_main -pthread
-LDFLAGS=-lopenblas
-SRC_DIR=MeanVector/src
-TESTS_DIR=MeanVector/tests
-PYTHON_DIR=MeanVector/python
+SRC_DIR=meanvector/src
+TESTS_DIR=meanvector/tests
+PYTHON_DIR=meanvector/python
 
 all: MeanVector test
 
