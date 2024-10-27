@@ -1,8 +1,6 @@
 import numpy as np 
 import time
 
-from MeanVector import meanVector
-
 
 def test_timings(func: Callable, *args):
     _ = func(*args)

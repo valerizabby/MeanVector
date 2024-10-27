@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 from glob import glob
 
-so_files = glob("MeanVector/python/vector_core*.so")
+so_files = glob("meanvector/python/vector_core*.so")
 
 setup(
     name="mean_vector",
